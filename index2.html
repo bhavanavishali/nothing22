@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mailing List Signup</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+    .container {
+      width: 300px;
+      text-align: left;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 5px;
+      color: white;
+      background-color: black;
+      font-size: 16px;
+    }
+    .checkbox-container {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>JOIN OUR MAILING LIST</h2>
+    <input type="text" id="emailInput" placeholder="EMAIL ADDRESS" />
+    
+    <p for="policyCheck" id="message"></p>
+    <p for="policyCheck" id="message1"></p>
+    
+    </div>
+
+  <script>
+    // Select the input and message elements
+    const emailInput = document.getElementById("emailInput");
+    const message = document.getElementById("message");
+    const message1 = document.getElementById("message1");
+
+    // Add an event listener to the input for the 'click' event
+    emailInput.addEventListener("click", function() {
+      message.style.display = "block";
+      message.textContent = "YOU HAVE READ AND AGREE TO THE TERMS IN OUR PRIVACY POLICY ";
+      message1.style.display = "block";
+      message1.textContent = "YOU CONSENT TO RECEIVING NOTHING MARKETING COMMUNICATIONS. ";
+      
+    });
+  </script>
+
+</body>
+</html>

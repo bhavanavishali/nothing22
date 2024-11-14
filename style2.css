@@ -1,0 +1,137 @@
+/* Header Styling */
+header {
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+}
+.logo {
+    width: 162px;
+    height: 34px;
+    margin-left: 48px;
+    margin-top: -4px;
+}
+
+/* Body Font */
+body {
+    font-family: 'NType82-bold', 'Noto Sans Thai', 'NType82Mono', sans-serif !important;
+}
+
+/* Navbar Styling */
+.navbar {
+    height: 50px; /* Increased for better visibility */
+}
+.nav-link {
+    font-size: 18px; /* Reduced font size for better responsiveness */
+    color: black !important;
+    font-family: 'NType82-bold', 'Noto Sans Thai', 'NType82Mono', sans-serif !important;
+    font-weight: bold;
+    margin-right: 15px; /* Add spacing between navbar items */
+    align-items: center;
+}
+
+/* Section Styling */
+.section1 {
+    background-color: white;
+    padding: 2rem; /* Added padding for better spacing */
+}
+.left-img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+/* Button Styling */
+.btn-learn-more {
+    background-color: #001f3f; /* Dark blue color */
+    color: white;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Text Styling for Section Content */
+.section1 h1 {
+    font-size: 32px; /* Adjusted for responsiveness */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.section1 p {
+    font-size: 18px; /* Adjusted for readability */
+    margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 16px; /* Reduced font size for smaller screens */
+    }
+    .section1 h1 {
+        font-size: 24px; /* Further reduced for smaller screens */
+    }
+    .section1 p {
+        font-size: 16px;
+    }
+    .logo {
+        margin-left: 16px; /* Reduced left margin on small screens */
+    }
+    .btn-learn-more {
+        padding: 0.4rem 1rem;
+        font-size: 14px;
+    }
+    .left-img {
+        max-height: 400px; /* Reduces image height on smaller screens */
+    }
+}
+
+
+.section2{
+    height: auto;
+    background-color: white
+ 
+}
+.section2 .row{
+    margin-top: 50px;
+}
+.section2 p{
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .section2 h1 {
+        font-size: 20px;
+    }
+
+    .section2 p {
+        font-size: 16px;
+    }
+
+    .section2 .row {
+        margin-top: 10px;
+    }
+}
+
+
+footer{
+    background-color: black;
+}
+footer li,h2{
+    color: white;
+}
+footer ul{
+    list-style-type: none;
+}
+footer h1{
+    color: white;
+}
+footer input{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
